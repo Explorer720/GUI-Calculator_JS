@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Calculator</title>
+    <link rel="stylesheet" href="./style_light.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h1>Calculator</h1>
+<!-- first row includes result space and clr space -->
+
+<!-- space for showing result of calculation -->
+            <div class="first-row">
+                <input type="text" name="result" id="result" class="result" value="Result" placeholder="Result" readonly  />
+<!-- clr or c button for clearing previous calculation -->
+                <input type="button" value="C" class="clear" onclick="clearScreen()"/>
+
+            </div>
+<!-- second row includes 1,2,3,+ -->
+            <div class="second-row">
+                <input type="button" value="1" onclick="liveScreen(1)" id="one"/>
+                <input type="button" value="2" onclick="liveScreen(2)" id="two"/>
+                <input type="button" value="3"
+                onclick="liveScreen(3)" id="three"/>
+                <input type="button" value="+" onclick="liveScreen('+')" />
+            </div>
+<!-- third row includes 4,5,6,- -->
+            <div class="third-row">
+                <input type="button" value="4" onclick="liveScreen(4)" id="four"/>
+                <input type="button" value="5" onclick="liveScreen(5)" id="five"/>
+                <input type="button" value="6"
+                onclick="liveScreen(6)" id="six"/>
+                <input type="button" value="-" onclick="liveScreen('-')" />
+
+            </div>
+<!-- fourth row includes 7,8,9,* -->
+            <div class="fourth-row">
+                <input type="button" value="7" onclick="liveScreen(7)" id="seven"/>
+                <input type="button" value="8" onclick="liveScreen(8)" id="eight"/>
+                <input type="button" value="9"
+                onclick="liveScreen(9)" id="nine"/>
+                <input type="button" value="*" onclick="liveScreen('*')" />
+
+            </div>
+<!-- fifth row includes /,0,.,= -->
+            <div class="fifth-row">
+                <input type="button" value="/" onclick="liveScreen('/')" id="one"/>
+                <input type="button" value="0" onclick="liveScreen(0)" id="two"/>
+                <input type="button" value="."
+                onclick="liveScreen('.')" id="three"/>
+                <input type="button" value="=" onclick="result.value = eval(resilt.value)" />
+
+            </div>
+<!-- last line includes bottom buttons -->
+            <div class="bottom-buttons">
+                <a href="https://github.com/Explorer720/GUI-Calculator_JS" target="_blank"><i class="fab fa-github">SourceCode</i></a>
+                <button onclick="switchTheme()" id="dark-mode">
+                    Dark Mode 🌙
+                  </button>
+            </div>
+    </div>
+    </div>
+    <!-- Fontawesome Script -->
+  <script src="https://kit.fontawesome.com/f28b055962.js" crossorigin="anonymous"></script>
+  <script src="./script.js" sync defer></script>
+</body>
+</html>
